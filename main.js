@@ -33,17 +33,17 @@ function my_keydown(e)
 		document.getElementById("d1").innerHTML="You pressed a special key";
 		console.log("special key");
 	    }
-		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
+		else if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
 			alphabetkey();
 			document.getElementById("d1").innerHTML="You pressed an alphabet key";
 			console.log("alphabet key");
 		}
-		if(keyPressed >=48 && keyPressed<=57){
+		else if(keyPressed >=48 && keyPressed<=57){
 			numberkey();
 			document.getElementById("d1").innerHTML="You pressed a number key";
 			console.log("number key");
 		}
-		if(keyPressed >=37 && keyPressed<=40){
+		else if(keyPressed >=37 && keyPressed<=40){
 			arrowkey();
 			document.getElementById("d1").innerHTML="You pressed an arrow key";
 			console.log("arrow key");
